@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Vault - AeroVault</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="AeroVault Knowledge Command Center - Technical documentation, research publications, industry insights, and educational resources for aerospace professionals.">
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerovault5090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+
+  </head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-surface-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2L35 12V28L20 38L5 28V12L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <path d="M14 20L26 20M20 14L20 26" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-headline font-bold">AeroVault</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-precision">Mission Control</a>
+                    <a href="technology_showcase.html" class="text-text-secondary hover:text-primary transition-precision">Technology</a>
+                    <a href="active_missions.html" class="text-text-secondary hover:text-primary transition-precision">Active Missions</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-precision">About</a>
+                    <a href="knowledge_vault.html" class="text-primary font-medium border-b-2 border-primary pb-1">Knowledge Vault</a>
+                    <a href="contact.html" class="bg-primary text-background px-6 py-2 rounded-aerospace font-cta hover:shadow-glow transition-precision">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-text-primary" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-surface border-t border-surface-500" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="homepage.html" class="block py-2 text-text-secondary">Mission Control</a>
+                <a href="technology_showcase.html" class="block py-2 text-text-secondary">Technology</a>
+                <a href="active_missions.html" class="block py-2 text-text-secondary">Active Missions</a>
+                <a href="about.html" class="block py-2 text-text-secondary">About</a>
+                <a href="knowledge_vault.html" class="block py-2 text-primary font-medium">Knowledge Vault</a>
+                <a href="contact.html" class="block py-2 text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-background via-surface-800 to-background">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1657972170499-3376d9eb8f65" 
+                 alt="Advanced aerospace research laboratory with technical documentation and engineering blueprints displayed on multiple screens" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://images.unsplash.com/photo-1568057373106-63057e421d1c'; this.onerror=null;">
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-headline font-bold mb-6 text-balance">
+                Knowledge <span class="text-primary">Command Center</span>
+            </h1>
+            <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto text-balance">
+                Comprehensive aerospace intelligence hub featuring technical documentation, research publications, and educational resources that establish thought leadership and support critical decision-making.
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="relative">
+                    <input type="text" 
+                           placeholder="Search technical specs, research papers, or educational content..." 
+                           class="w-full px-6 py-4 bg-surface border border-surface-500 rounded-aerospace text-text-primary placeholder-text-secondary focus:border-primary focus:outline-none transition-precision"
+                           id="knowledge-search">
+                    <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-primary hover:text-secondary transition-precision">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-surface/50 backdrop-blur-sm border border-surface-500 rounded-aerospace p-4 text-center">
+                    <div class="text-2xl font-headline font-bold text-primary mb-1">2,847</div>
+                    <div class="text-text-secondary text-sm">Technical Docs</div>
+                </div>
+                <div class="bg-surface/50 backdrop-blur-sm border border-surface-500 rounded-aerospace p-4 text-center">
+                    <div class="text-2xl font-headline font-bold text-secondary mb-1">156</div>
+                    <div class="text-text-secondary text-sm">Research Papers</div>
+                </div>
+                <div class="bg-surface/50 backdrop-blur-sm border border-surface-500 rounded-aerospace p-4 text-center">
+                    <div class="text-2xl font-headline font-bold text-accent mb-1">89</div>
+                    <div class="text-text-secondary text-sm">Webinars</div>
+                </div>
+                <div class="bg-surface/50 backdrop-blur-sm border border-surface-500 rounded-aerospace p-4 text-center">
+                    <div class="text-2xl font-headline font-bold text-success mb-1">24/7</div>
+                    <div class="text-text-secondary text-sm">Access</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Categories -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Knowledge Categories</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Organized intelligence across all aerospace domains for comprehensive understanding and strategic decision-making
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Technical Documentation -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group cursor-pointer">
+                    <div class="w-12 h-12 bg-primary/20 rounded-aerospace flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-precision">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Technical Documentation</h3>
+                    <p class="text-text-secondary text-sm mb-4">Searchable engineering specifications, component manuals, and system integration guides.</p>
+                    <div class="text-primary text-sm font-medium">2,847 Documents</div>
+                </div>
+                
+                <!-- Research Publications -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group cursor-pointer">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-aerospace flex items-center justify-center mb-4 group-hover:bg-secondary/30 transition-precision">
+                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Research Publications</h3>
+                    <p class="text-text-secondary text-sm mb-4">Peer-reviewed studies, white papers, and breakthrough research findings.</p>
+                    <div class="text-primary text-sm font-medium">156 Publications</div>
+                </div>
+                
+                <!-- Industry Insights -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group cursor-pointer">
+                    <div class="w-12 h-12 bg-accent/20 rounded-aerospace flex items-center justify-center mb-4 group-hover:bg-accent/30 transition-precision">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Industry Insights</h3>
+                    <p class="text-text-secondary text-sm mb-4">Market analysis, trend reports, and strategic aerospace intelligence.</p>
+                    <div class="text-primary text-sm font-medium">Weekly Updates</div>
+                </div>
+                
+                <!-- Educational Resources -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group cursor-pointer">
+                    <div class="w-12 h-12 bg-warning/20 rounded-aerospace flex items-center justify-center mb-4 group-hover:bg-warning/30 transition-precision">
+                        <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Educational Resources</h3>
+                    <p class="text-text-secondary text-sm mb-4">Aerospace fundamentals, learning paths, and certification programs.</p>
+                    <div class="text-primary text-sm font-medium">Self-Paced Learning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-headline font-bold mb-4">Featured Content</h2>
+                    <p class="text-lg text-text-secondary max-w-2xl">
+                        Latest research, breakthrough studies, and essential resources for aerospace professionals
+                    </p>
+                </div>
+                <div class="flex space-x-4 mt-6 lg:mt-0">
+                    <button class="px-6 py-2 bg-primary text-background rounded-aerospace font-cta hover:shadow-glow transition-precision">
+                        Latest
+                    </button>
+                    <button class="px-6 py-2 border border-surface-500 text-text-secondary rounded-aerospace font-cta hover:border-primary hover:text-primary transition-precision">
+                        Popular
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Research Paper -->
+                <div class="bg-surface border border-surface-500 rounded-aerospace overflow-hidden hover:border-primary transition-precision group">
+                    <div class="aspect-video bg-gradient-to-br from-surface-700 to-surface-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092335331-5e00ac65e934" 
+                             alt="Advanced propulsion system research with detailed technical diagrams and performance analysis charts" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-precision"
+                             onerror="this.src='https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-background px-3 py-1 rounded-full text-sm font-cta">Research</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-headline font-semibold mb-2 group-hover:text-primary transition-precision">
+                            Next-Generation Hybrid Propulsion Systems
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Comprehensive analysis of hybrid rocket engines with 15% efficiency improvements and reduced environmental impact.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-xs text-text-secondary">
+                                <span>Dr. Sarah Chen</span> • <span>Oct 25, 2025</span>
+                            </div>
+                            <button class="text-primary hover:text-secondary transition-precision">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Documentation -->
+                <div class="bg-surface border border-surface-500 rounded-aerospace overflow-hidden hover:border-primary transition-precision group">
+                    <div class="aspect-video bg-gradient-to-br from-surface-700 to-surface-800 relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=2940" 
+                             alt="Technical aerospace documentation with detailed engineering specifications and component blueprints" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-precision"
+                             onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-secondary text-background px-3 py-1 rounded-full text-sm font-cta">Technical</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-headline font-semibold mb-2 group-hover:text-primary transition-precision">
+                            X-7 Propulsion System Manual
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Complete technical specifications, installation procedures, and maintenance protocols for the X-7 system.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-xs text-text-secondary">
+                                <span>Engineering Team</span> • <span>Updated Oct 28, 2025</span>
+                            </div>
+                            <button class="text-primary hover:text-secondary transition-precision">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Webinar -->
+                <div class="bg-surface border border-surface-500 rounded-aerospace overflow-hidden hover:border-primary transition-precision group">
+                    <div class="aspect-video bg-gradient-to-br from-surface-700 to-surface-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1728240372414-626990b694f3" 
+                             alt="Aerospace industry webinar presentation with expert speakers discussing future space exploration technologies" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-precision"
+                             onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-background px-3 py-1 rounded-full text-sm font-cta">Webinar</span>
+                        </div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-primary/80 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-background ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-headline font-semibold mb-2 group-hover:text-primary transition-precision">
+                            Future of Space Exploration
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Industry leaders discuss emerging technologies, market trends, and the next decade of aerospace innovation.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-xs text-text-secondary">
+                                <span>45 min</span> • <span>Oct 20, 2025</span>
+                            </div>
+                            <button class="text-primary hover:text-secondary transition-precision">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m2 4H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Powered Features -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">AI-Enhanced Learning</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Advanced artificial intelligence features that personalize your knowledge discovery and accelerate learning
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Smart Recommendations -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 text-center">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Smart Recommendations</h3>
+                    <p class="text-text-secondary text-sm">AI-powered content suggestions based on your interests and expertise level.</p>
+                </div>
+                
+                <!-- Interactive Glossary -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 text-center">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Interactive Glossary</h3>
+                    <p class="text-text-secondary text-sm">Comprehensive technical dictionary with contextual definitions and examples.</p>
+                </div>
+                
+                <!-- Progress Tracking -->
+                <div class="bg-background border border-surface-500 rounded-aerospace p-6 text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-3">Progress Tracking</h3>
+                    <p class="text-text-secondary text-sm">Monitor your learning journey with detailed analytics and achievement milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Q&A Forum -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Expert Q&A Forum</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Connect with aerospace professionals and get answers from industry experts
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Recent Questions -->
+                <div>
+                    <h3 class="text-xl font-headline font-semibold mb-6">Recent Questions</h3>
+                    <div class="space-y-6">
+                        <div class="bg-surface border border-surface-500 rounded-aerospace p-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-primary font-mono text-sm">JM</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="font-headline font-medium mb-2">Optimal thrust vectoring angles for orbital insertion?</h4>
+                                    <p class="text-text-secondary text-sm mb-3">Looking for guidance on calculating optimal thrust vectoring angles during the final phase of orbital insertion...</p>
+                                    <div class="flex items-center space-x-4 text-xs text-text-secondary">
+                                        <span>James Mitchell</span>
+                                        <span>•</span>
+                                        <span>2 hours ago</span>
+                                        <span>•</span>
+                                        <span class="text-primary">3 answers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-surface border border-surface-500 rounded-aerospace p-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-secondary font-mono text-sm">AL</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="font-headline font-medium mb-2">Material fatigue testing for deep space missions</h4>
+                                    <p class="text-text-secondary text-sm mb-3">What are the current best practices for testing material fatigue in extreme temperature variations...</p>
+                                    <div class="flex items-center space-x-4 text-xs text-text-secondary">
+                                        <span>Dr. Anna Liu</span>
+                                        <span>•</span>
+                                        <span>5 hours ago</span>
+                                        <span>•</span>
+                                        <span class="text-primary">7 answers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Top Contributors -->
+                <div>
+                    <h3 class="text-xl font-headline font-semibold mb-6">Top Contributors</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-4 bg-surface border border-surface-500 rounded-aerospace">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                                <span class="text-background font-headline font-bold">SC</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-headline font-medium">Dr. Sarah Chen</h4>
+                                <p class="text-text-secondary text-sm">Propulsion Systems Expert</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-primary font-mono text-sm">847</div>
+                                <div class="text-text-secondary text-xs">Answers</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-4 bg-surface border border-surface-500 rounded-aerospace">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent to-warning rounded-full flex items-center justify-center">
+                                <span class="text-background font-headline font-bold">MR</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-headline font-medium">Dr. Marcus Rodriguez</h4>
+                                <p class="text-text-secondary text-sm">Materials Science Lead</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-primary font-mono text-sm">623</div>
+                                <div class="text-text-secondary text-xs">Answers</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-4 bg-surface border border-surface-500 rounded-aerospace">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-success rounded-full flex items-center justify-center">
+                                <span class="text-background font-headline font-bold">EK</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-headline font-medium">Elena Kowalski</h4>
+                                <p class="text-text-secondary text-sm">Systems Integration</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-primary font-mono text-sm">456</div>
+                                <div class="text-text-secondary text-xs">Answers</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full mt-6 bg-primary text-background px-6 py-3 rounded-aerospace font-cta hover:shadow-glow transition-precision">
+                        Ask a Question
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-br from-surface-800 to-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Ready to Expand Your Aerospace Knowledge?</h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Join thousands of aerospace professionals accessing cutting-edge research, technical documentation, and expert insights.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-primary text-background px-8 py-4 rounded-aerospace font-cta text-lg hover:shadow-glow transition-precision">
+                    Request Access
+                </a>
+                <button class="border border-primary text-primary px-8 py-4 rounded-aerospace font-cta text-lg hover:bg-primary hover:text-background transition-precision">
+                    Schedule Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-surface-500 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2L35 12V28L20 38L5 28V12L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                            <path d="M14 20L26 20M20 14L20 26" stroke="white" stroke-width="2"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-headline font-bold">AeroVault</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Precision engineered for the next frontier of flight. We design propulsion systems that redefine atmospheric limits.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-precision">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-precision">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-headline font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="technology_showcase.html" class="text-text-secondary hover:text-primary transition-precision">Technology</a></li>
+                        <li><a href="active_missions.html" class="text-text-secondary hover:text-primary transition-precision">Active Missions</a></li>
+                        <li><a href="about.html" class="text-text-secondary hover:text-primary transition-precision">About Us</a></li>
+                        <li><a href="homepage.html" class="text-text-secondary hover:text-primary transition-precision">Mission Control</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-headline font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li>Mission Control Center</li>
+                        <li>Houston, TX 77058</li>
+                        <li>+1 (555) 123-AERO</li>
+                        <li>contact@aerovault.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-surface-500 mt-8 pt-8 text-center text-text-secondary">
+                <p>&copy; 2025 AeroVault. All Rights Reserved. | Precision Engineered for Space Exploration</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Search functionality
+        document.getElementById('knowledge-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // Simulate search functionality
+            if (searchTerm.length > 2) {
+                console.log('Searching for:', searchTerm);
+                // In a real application, this would trigger an API call
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Category card interactions
+        document.querySelectorAll('.group.cursor-pointer').forEach(card => {
+            card.addEventListener('click', function() {
+                const category = this.querySelector('h3').textContent;
+                console.log('Navigating to category:', category);
+                // In a real application, this would navigate to the category page
+            });
+        });
+
+        // Featured content interactions
+        document.querySelectorAll('.group').forEach(item => {
+            const downloadBtn = item.querySelector('button');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const title = item.querySelector('h3').textContent;
+                    console.log('Downloading:', title);
+                    // In a real application, this would trigger a download
+                });
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

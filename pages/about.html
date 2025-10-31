@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AeroVault - Engineering Excellence & Aerospace Heritage</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Discover AeroVault's founding vision, leadership team, engineering culture, and mission values. Where human ambition meets engineering excellence in aerospace innovation.">
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerovault5090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-surface-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2L35 12V28L20 38L5 28V12L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        <path d="M14 20L26 20M20 14L20 26" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-headline font-bold">AeroVault</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-precision">Mission Control</a>
+                    <a href="technology_showcase.html" class="text-text-secondary hover:text-primary transition-precision">Technology</a>
+                    <a href="active_missions.html" class="text-text-secondary hover:text-primary transition-precision">Active Missions</a>
+                    <a href="about.html" class="text-primary font-medium border-b-2 border-primary pb-1">About</a>
+                    <a href="knowledge_vault.html" class="text-text-secondary hover:text-primary transition-precision">Knowledge Vault</a>
+                    <a href="contact.html" class="bg-primary text-background px-6 py-2 rounded-aerospace font-cta hover:shadow-glow transition-precision">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-text-primary" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-surface border-t border-surface-500" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="homepage.html" class="block py-2 text-text-secondary">Mission Control</a>
+                <a href="technology_showcase.html" class="block py-2 text-text-secondary">Technology</a>
+                <a href="active_missions.html" class="block py-2 text-text-secondary">Active Missions</a>
+                <a href="about.html" class="block py-2 text-primary font-medium">About</a>
+                <a href="knowledge_vault.html" class="block py-2 text-text-secondary">Knowledge Vault</a>
+                <a href="contact.html" class="block py-2 text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-background via-surface-800 to-background">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1663755785915-ef1748dda404" 
+                 alt="Modern aerospace engineering facility with advanced manufacturing equipment and clean room environment" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;">
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-headline font-bold mb-6 text-balance">
+                Where Human Ambition Meets
+                <span class="text-primary">Engineering Excellence</span>
+            </h1>
+            <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto text-balance">
+                Precision without coldness. Innovation without complexity. Premium quality without pretension. 
+                We are the intersection of technical mastery and bold imagination.
+            </p>
+        </div>
+    </section>
+
+    <!-- Company Timeline -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Origin Story</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Our founding vision and aerospace heritage spanning over a decade of innovation
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary opacity-30"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-16">
+                    <!-- 2010 - Foundation -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                                <h3 class="text-xl font-headline font-semibold mb-3 text-primary">Foundation</h3>
+                                <p class="text-text-secondary mb-2">Founded by aerospace engineers with a vision to revolutionize propulsion systems</p>
+                                <span class="text-sm font-mono text-accent">2010</span>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                        </div>
+                        <div class="w-5/12"></div>
+                    </div>
+                    
+                    <!-- 2013 - First Launch -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12"></div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-secondary rounded-full border-4 border-background"></div>
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                                <h3 class="text-xl font-headline font-semibold mb-3 text-secondary">First Successful Launch</h3>
+                                <p class="text-text-secondary mb-2">Achieved 99.2% mission success rate with our inaugural propulsion system</p>
+                                <span class="text-sm font-mono text-accent">2013</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2017 - NASA Partnership -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                                <h3 class="text-xl font-headline font-semibold mb-3 text-accent">NASA Partnership</h3>
+                                <p class="text-text-secondary mb-2">Secured strategic partnership for deep space exploration missions</p>
+                                <span class="text-sm font-mono text-accent">2017</span>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-accent rounded-full border-4 border-background"></div>
+                        </div>
+                        <div class="w-5/12"></div>
+                    </div>
+                    
+                    <!-- 2021 - Global Expansion -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12"></div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-success rounded-full border-4 border-background"></div>
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                                <h3 class="text-xl font-headline font-semibold mb-3 text-success">Global Expansion</h3>
+                                <p class="text-text-secondary mb-2">Established international partnerships across 15 countries</p>
+                                <span class="text-sm font-mono text-accent">2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2025 - Present -->
+                    <div class="flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <div class="bg-background border border-primary rounded-aerospace p-6 shadow-glow">
+                                <h3 class="text-xl font-headline font-semibold mb-3 text-primary">Next Frontier</h3>
+                                <p class="text-text-secondary mb-2">Leading the industry with 150+ successful missions and 99.7% success rate</p>
+                                <span class="text-sm font-mono text-primary">2025</span>
+                            </div>
+                        </div>
+                        <div class="w-2/12 flex justify-center">
+                            <div class="w-6 h-6 bg-primary rounded-full border-4 border-background animate-glow-pulse"></div>
+                        </div>
+                        <div class="w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Command -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Leadership Command</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Executive team with proven aerospace credentials and visionary leadership
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CEO -->
+                <div class="bg-surface border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1663720527180-4c60a78fe3b7" 
+                             alt="Dr. Marcus Chen, CEO and Co-founder, professional headshot of experienced aerospace executive" 
+                             class="w-24 h-24 rounded-full object-cover mx-auto border-2 border-primary"
+                             onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-background" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold mb-2 text-center">Dr. Marcus Chen</h3>
+                    <p class="text-primary text-center mb-3">CEO & Co-founder</p>
+                    <p class="text-text-secondary text-sm mb-4">Former NASA propulsion engineer with 20+ years experience. Led development of next-generation rocket engines for Mars missions.</p>
+                    <div class="flex justify-center space-x-3">
+                        <span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded">PhD Aerospace</span>
+                        <span class="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded">NASA Veteran</span>
+                    </div>
+                </div>
+                
+                <!-- CTO -->
+                <div class="bg-surface border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1734456611474-13245d164868" 
+                             alt="Dr. Sarah Rodriguez, CTO and Co-founder, professional headshot of aerospace technology leader" 
+                             class="w-24 h-24 rounded-full object-cover mx-auto border-2 border-secondary"
+                             onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-background" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold mb-2 text-center">Dr. Sarah Rodriguez</h3>
+                    <p class="text-secondary text-center mb-3">CTO & Co-founder</p>
+                    <p class="text-text-secondary text-sm mb-4">Materials science pioneer specializing in extreme environment composites. 15+ patents in aerospace materials technology.</p>
+                    <div class="flex justify-center space-x-3">
+                        <span class="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded">Materials Expert</span>
+                        <span class="text-xs bg-accent/20 text-accent px-2 py-1 rounded">15+ Patents</span>
+                    </div>
+                </div>
+                
+                <!-- VP Engineering -->
+                <div class="bg-surface border border-surface-500 rounded-aerospace p-6 hover:border-primary transition-precision group">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1649842908994-27acea7f374c" 
+                             alt="James Thompson, VP of Engineering, professional headshot of aerospace engineering leader" 
+                             class="w-24 h-24 rounded-full object-cover mx-auto border-2 border-accent"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;">
+                        <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-background" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold mb-2 text-center">James Thompson</h3>
+                    <p class="text-accent text-center mb-3">VP of Engineering</p>
+                    <p class="text-text-secondary text-sm mb-4">Former SpaceX lead engineer with expertise in propulsion systems integration. Managed 50+ successful launch campaigns.</p>
+                    <div class="flex justify-center space-x-3">
+                        <span class="text-xs bg-accent/20 text-accent px-2 py-1 rounded">SpaceX Alumni</span>
+                        <span class="text-xs bg-success/20 text-success px-2 py-1 rounded">50+ Launches</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Culture -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Engineering Culture</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Behind-the-scenes innovation process that drives our mission success
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Culture Video Placeholder -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-surface-800 to-background rounded-aerospace overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1690192078982-d3d2f89059ee" 
+                             alt="AeroVault engineering team collaborating on spacecraft design in modern facility with advanced CAD workstations" 
+                             class="w-full h-80 object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <button class="w-16 h-16 bg-primary/80 rounded-full flex items-center justify-center hover:bg-primary transition-precision">
+                                <svg class="w-6 h-6 text-background ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-center text-text-secondary text-sm mt-4">Engineering Culture Video Series - Episode 1: Innovation Process</p>
+                </div>
+                
+                <!-- Culture Values -->
+                <div class="space-y-6">
+                    <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-aerospace flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-headline font-semibold">Innovation First</h3>
+                        </div>
+                        <p class="text-text-secondary">We encourage bold thinking and calculated risks. Every engineer has the autonomy to propose revolutionary solutions.</p>
+                    </div>
+                    
+                    <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-secondary/20 rounded-aerospace flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-headline font-semibold">Collaborative Excellence</h3>
+                        </div>
+                        <p class="text-text-secondary">Cross-functional teams work seamlessly together. Knowledge sharing is embedded in our daily operations.</p>
+                    </div>
+                    
+                    <div class="bg-background border border-surface-500 rounded-aerospace p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-accent/20 rounded-aerospace flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-headline font-semibold">Mission Critical Quality</h3>
+                        </div>
+                        <p class="text-text-secondary">Every component, every line of code, every decision is made with mission success as the primary objective.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Values -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Mission Values</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Core principles that guide every decision and drive our commitment to excellence
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Precision -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-precision">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-headline font-bold mb-4 text-primary">Precision</h3>
+                    <p class="text-text-secondary">Every calculation matters. Every component is engineered to exact specifications. We deliver precision without compromise because missions depend on it.</p>
+                </div>
+                
+                <!-- Exploration -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary/30 transition-precision">
+                        <svg class="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-headline font-bold mb-4 text-secondary">Exploration</h3>
+                    <p class="text-text-secondary">We push boundaries and venture into uncharted territories. Our curiosity drives innovation and opens new possibilities for human advancement.</p>
+                </div>
+                
+                <!-- Sustainability -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-success/30 transition-precision">
+                        <svg class="w-10 h-10 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-headline font-bold mb-4 text-success">Sustainability</h3>
+                    <p class="text-text-secondary">We design for the long term, considering environmental impact and resource efficiency in every solution we create for space exploration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Facility Tours -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Virtual Facility Tours</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Explore our state-of-the-art facilities with immersive 360-degree virtual tours
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Manufacturing Facility -->
+                <div class="bg-background border border-surface-500 rounded-aerospace overflow-hidden hover:border-primary transition-precision group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1679454690793-83340db232db" 
+                             alt="Advanced aerospace manufacturing facility with precision machining equipment and clean room environment" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-precision flex items-center justify-center">
+                            <button class="bg-primary text-background px-6 py-3 rounded-aerospace font-cta hover:shadow-glow transition-precision">
+                                Start Virtual Tour
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-primary/80 text-background px-3 py-1 rounded-full text-sm font-mono">
+                            360° Tour
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-semibold mb-3">Manufacturing Facility</h3>
+                        <p class="text-text-secondary mb-4">State-of-the-art precision manufacturing with advanced CNC machining, 3D printing, and quality control systems.</p>
+                        <div class="flex items-center text-primary text-sm">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            Interactive 360° Experience
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testing Laboratory -->
+                <div class="bg-background border border-surface-500 rounded-aerospace overflow-hidden hover:border-primary transition-precision group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1656431756476-4dc873d79678" 
+                             alt="Aerospace testing laboratory with rocket engine test stands and advanced measurement equipment" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-precision flex items-center justify-center">
+                            <button class="bg-primary text-background px-6 py-3 rounded-aerospace font-cta hover:shadow-glow transition-precision">
+                                Start Virtual Tour
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-secondary/80 text-background px-3 py-1 rounded-full text-sm font-mono">
+                            360° Tour
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-headline font-semibold mb-3">Testing Laboratory</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive testing facilities including engine test stands, environmental chambers, and validation systems.</p>
+                        <div class="flex items-center text-secondary text-sm">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            Interactive 360° Experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Recognition -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Industry Recognition</h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Awards, certifications, and media coverage that reinforce our credibility and market position
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- NASA Partnership -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-2">NASA Certified Partner</h3>
+                    <p class="text-text-secondary text-sm">Official technology partner for deep space exploration missions</p>
+                </div>
+                
+                <!-- FAA Certification -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-2">FAA Certified</h3>
+                    <p class="text-text-secondary text-sm">Full compliance with aerospace safety and quality standards</p>
+                </div>
+                
+                <!-- Innovation Award -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm2.7-2h8.6l.9-5.4-2.1 1.4L12 8l-3.1 2L6.8 8.6L7.7 14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-2">Innovation Excellence</h3>
+                    <p class="text-text-secondary text-sm">2024 Aerospace Innovation Award for propulsion technology</p>
+                </div>
+                
+                <!-- ISO Certification -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,1L21,5V11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1M12,7C10.89,7 10,7.89 10,9A2,2 0 0,0 12,11A2,2 0 0,0 14,9C14,7.89 13.1,7 12,7Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-headline font-semibold mb-2">ISO 9001:2015</h3>
+                    <p class="text-text-secondary text-sm">International quality management system certification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-br from-surface-800 to-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Join Our Mission</h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Whether you're seeking partnership opportunities, career advancement, or investment possibilities, 
+                we invite you to be part of the next frontier of aerospace innovation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-primary text-background px-8 py-4 rounded-aerospace font-cta text-lg hover:shadow-glow transition-precision">
+                    Partner With Us
+                </a>
+                <a href="contact.html" class="border border-primary text-primary px-8 py-4 rounded-aerospace font-cta text-lg hover:bg-primary hover:text-background transition-precision">
+                    Explore Careers
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-surface-500 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2L35 12V28L20 38L5 28V12L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                            <path d="M14 20L26 20M20 14L20 26" stroke="white" stroke-width="2"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-headline font-bold">AeroVault</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Precision engineered for the next frontier of flight. We design propulsion systems that redefine atmospheric limits.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-precision">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-precision">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-headline font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="technology_showcase.html" class="text-text-secondary hover:text-primary transition-precision">Technology</a></li>
+                        <li><a href="active_missions.html" class="text-text-secondary hover:text-primary transition-precision">Active Missions</a></li>
+                        <li><a href="about.html" class="text-text-secondary hover:text-primary transition-precision">About Us</a></li>
+                        <li><a href="knowledge_vault.html" class="text-text-secondary hover:text-primary transition-precision">Knowledge Vault</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-headline font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li>Mission Control Center</li>
+                        <li>Houston, TX 77058</li>
+                        <li>+1 (555) 123-AERO</li>
+                        <li>contact@aerovault.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-surface-500 mt-8 pt-8 text-center text-text-secondary">
+                <p>&copy; 2025 AeroVault. All Rights Reserved. | Precision Engineered for Space Exploration</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Virtual tour interaction
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('click', function() {
+                // Placeholder for virtual tour functionality
+                console.log('Virtual tour initiated');
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
