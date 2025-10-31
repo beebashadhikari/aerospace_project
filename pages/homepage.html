@@ -6,11 +6,49 @@
     <title>AeroVault - Mission Control Dashboard</title>
     <link rel="stylesheet" href="../css/main.css">
     <meta name="description" content="AeroVault - Premium aerospace engineering showcase and corporate platform. Precision engineered for the next frontier of flight.">
-  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerovault5090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
-  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+    <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Faerovault5090back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+    <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
 
+    <!-- Fix for mobile hero cutoff -->
+    <style>
+        /* Navbar height (h-16 = 4rem) */
+        :root { --nav-h: 4rem; }
 
-  </head>
+        /* On mobile, push hero content down below the fixed navbar */
+        @media (max-width: 767px) {
+            .hero-content {
+                padding-top: calc(var(--nav-h) + 1.5rem); /* navbar + breathing room */
+            }
+        }
+
+        /* Smooth-scroll offset for any anchor links */
+        html { scroll-padding-top: var(--nav-h); }
+
+        /* Existing particle styles (unchanged) */
+        .particle-field {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #00AEEF;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) translateX(0px); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10px) translateX(50px); opacity: 0; }
+        }
+    </style>
+</head>
 <body class="bg-background text-text-primary overflow-x-hidden">
     <!-- Navigation Header -->
     <nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-surface-500">
@@ -85,8 +123,8 @@
             </div>
         </div>
         
-        <!-- Hero Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- Hero Content (fixed: added hero-content class) -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center hero-content">
             <div class="animate-fade-in">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-headline font-bold mb-6 text-balance">
                     Precision Engineered for the
@@ -372,31 +410,6 @@
         </div>
     </footer>
 
-    <style>
-        .particle-field {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        
-        .particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: #00AEEF;
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(100vh) translateX(0px); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-10px) translateX(50px); opacity: 0; }
-        }
-    </style>
-
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
@@ -459,6 +472,6 @@
             observer.observe(section);
         });
     </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
